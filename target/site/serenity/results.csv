@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login de usuario","Login de usuario","SUCCESS","2024-10-22T13:26:41.1441712-05:00[America/Bogota]","0.0","26.07"
+"Iniciar sesión en OrangeHRM","Cenario","PENDING","2024-10-22T13:33:04.0847011-05:00[America/Bogota]","0.0","0.31"
+"Automatización de inicio de sesión y proceso de contratación en OrangeHRM","Iniciar sesión y añadir un nuevo recluta","SUCCESS","2024-10-22T14:01:19.6726564-05:00[America/Bogota]","0.0","16.12"
+"Login en OrangeHRM","Iniciar sesión correctamente en OrangeHRM","SUCCESS","2024-10-25T08:59:02.4664821-05:00[America/Bogota]","0.0","24.9"
+"Proceso de contratación","Agregar un nuevo candidato en Recruitment","ERROR","2024-10-25T10:51:40.3025517-05:00[America/Bogota]","0.0","36.98"
