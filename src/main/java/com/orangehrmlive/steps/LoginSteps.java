@@ -42,17 +42,9 @@ public class LoginSteps {
     @Step ("Dar Clic en Boton Login")
     public void darcliclogin(){
         loginPage.getDriver().findElement(loginPage.getBtnLogin()).click();
-        esperaImplicita.EsperaImplicita(15);
+        esperaImplicita.EsperaImplicita(5);
 
     }
-
-
-   /* public void validarimgpicture(){
-        Assert.assertThat(loginPage.getDriver().findElement(loginPage.getImgpicture())
-                .isDisplayed(), Matchers.is(true));
-
-
-    }*/
 
 
 }

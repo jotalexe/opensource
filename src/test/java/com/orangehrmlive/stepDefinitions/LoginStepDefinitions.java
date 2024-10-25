@@ -34,12 +34,6 @@ public class LoginStepDefinitions {
         loginSteps.darcliclogin();
     }
 
-    @Entonces("El usuario debería ser redirigido al dashboard")
-    public void elUsuarioDeberíaSerRedirigidoAlDashboard() {
-
-        //loginSteps.validarimgpicture();
-
-    }
 
 
 }

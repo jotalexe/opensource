@@ -13,8 +13,7 @@ public class RecruitmentStepDefinitions {
 
     @Steps
     LoginSteps loginSteps;
-    RecruitmentSteps recruitmentSteps;
-    DashboardPage dashboardPage;
+    RecruitmentSteps recruitmentSteps = new RecruitmentSteps();
 
     @Dado("El usuario ha iniciado sesión en OrangeHRM")
     public void elUsuarioHaIniciadoSesiónEnOrangeHRM() throws IOException {
@@ -23,14 +22,14 @@ public class RecruitmentStepDefinitions {
         loginSteps.escribirusuario();
         loginSteps.escribirclave();
         loginSteps.darcliclogin();
-        //loginSteps.validarimgpicture();
+
 
     }
 
     @Cuando("El usuario navega a la sección {string}")
     public void elUsuarioNavegaALaSección(String string) {
 
-        dashboardPage.getRecruitmentMenu();
+        recruitmentSteps.darclicrecruitmentMenu();
 
      }
 
@@ -46,10 +45,14 @@ public class RecruitmentStepDefinitions {
         recruitmentSteps.escribirnombre();
         recruitmentSteps.esccribirapellido();
         recruitmentSteps.esccribircorreo();
+        recruitmentSteps.clicenGuardar();
+
     }
 
     @Entonces("El usuario debería ver un mensaje de confirmación de que el candidato fue agregado exitosamente")
     public void elUsuarioDeberíaVerUnMensajeDeConfirmaciónDeQueElCandidatoFueAgregadoExitosamente() {
+
+        recruitmentSteps.validarconfirmacion();
 
     }
 
